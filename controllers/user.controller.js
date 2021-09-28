@@ -2,7 +2,7 @@
  * @module UserController
  */
 
-import { request, response } from 'express';
+const { request, response } = require('express');
 
 const usersGet = (req = request, res = response) => {
     const { search, filter, collection } = req.query;
@@ -64,7 +64,7 @@ const userDelete = (req = request, res = response) => {
     });
 };
 
-export {
+module.exports = {
     usersGet,
     userGet,
     userPost,

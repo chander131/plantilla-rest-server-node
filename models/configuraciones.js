@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+const { Schema, model } = require('mongoose');
 const { Schema } = mongoose;
 
 /**
@@ -23,4 +23,4 @@ const ConfiguracionesSchema = new Schema({
     fechaModificacion: { type: String, required: true },
 });
 
-export default model('Configuraciones', ConfiguracionesSchema, 'Configuraciones');
+module.exports = model('Configuraciones', ConfiguracionesSchema, 'Configuraciones');

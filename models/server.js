@@ -1,9 +1,9 @@
-import express from 'express';
-import cors from 'cors';
-import MongoConnection from '../db/config';
+const express = require('express');
+const cors = require('cors');
+const MongoConnection = require('../db/config');
 
 // const userController = require('../routes/user.routes');
-import UserRoutes from '../routes/user.routes';
+const UserRoutes = require('../routes/user.routes');
 
 class Server {
 
@@ -57,4 +57,4 @@ class Server {
     }
 }
 
-export default Server;
+module.exports = Server;
